@@ -1,0 +1,35 @@
+Python-computer programming language->1989->Guido Vann Rossum->Monty’s Python Flying Show->5oct -2020 >3.9.
+
+Features ->
+-General Purpose->software development, Web development,Game Development
+	AI(Artificial Intelligence)- Machine Learning , Deep Learning ,IOT
+-multi-paradigm Programming
+			multi-paradigm->Procedural(step by step) Programming + Functional Programmings + OOP’S(objects and Classes)
+x = “ARJUN”
+
+-dynamically typed programming / Loosely typed
+
+-interpreted programming
+			(interpreter->which executes our program line by line)
+				compiler ->which executes the whole program at once
+
+-Open source (freely available)
+
+Syllabus
+-Introduction
+-Data Types
+		Numbers  -int,float(Decimal),complex number(a+bj)- 4 byte
+		String- ‘ ’ , “  ” ,”””   “”” ->multi line string
+		Boolean - True/False
+		NoneType-None
+		int x;
+-Data Collection
+	list-nd matrix, tuple, dictionary,sets
+-conditional Statements and LOOps
+-Functions
+-Exception Handeling
+-File Handeling
+Applications - web crawling-file downloader
+-chatbot + voice recognition - >google-speech_recognition
+
+Game ->pygame->2D->super mario,zombie shooter

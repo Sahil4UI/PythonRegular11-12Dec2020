@@ -73,8 +73,6 @@ NameError: name 'd' is not defined
 dict_keys(['id', 'Name', 'Marks', 'Phone'])
 >>> x.values()
 dict_values([101, 'Navya', 98, 9876543210])
->>> x.items()
-dict_items([('id', 101), ('Name', 'Navya'), ('Marks', 98), ('Phone', 9876543210)])
 >>> x
 {'id': 101, 'Name': 'Navya', 'Marks': 98, 'Phone': 9876543210}
 >>> x.get("id")

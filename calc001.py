@@ -7,31 +7,17 @@ def mul(x,y):
 def div(x,y):
     print(x/y)
 
-x=int(input("Enter number 1:"))
-y=int(input("Enter number 2:"))
-print(
-"""
-Press 1 to add
-Press 2 to subtract
-Press 3 to multiply
-Press 4 to Divide
-""")
-choice = int(input("Enter choice:"))
-
-if choice ==1:
-    add(x,y)
-elif choice ==2:
-    sub(x,y)
-elif choice ==3:
-    mul(x,y)
-elif choice ==4:
-    div(x,y)
-else:
-    print("invalid choice")
-
-
-    
-
-
-
-
+while True:
+    x=int(input("Enter number 1:"))
+    y=int(input("Enter number 2:"))
+    print(
+    """
+    Press + to add
+    Press - to subtract
+    Press * to multiply
+    Press / to Divide
+    """)
+    choice = input("Enter choice:")
+    d = {"+":add,"-":sub,"*":mul,"/":div}
+    function = d.get(choice)
+    function(x,y)

@@ -1,3 +1,4 @@
+#step 0
 import random
 combinations = [
     [1,2,3],[4,5,6],[7,8,9],
@@ -6,6 +7,7 @@ combinations = [
 
     ]
 positions = [i for i in range(1,10)]
+positions_occupied =[]
 def gameBoard():
     print(
         f"""
@@ -22,7 +24,22 @@ def userMove(choice):
     pos = int(input("Enter Your Position"))
     positions[pos-1]=choice
     gameBoard()
+    positions_occupied.append(pos)
+    msg = checkWinner(pos,choice)
+    return msg
 
+def checkWinner(pos,choice):
+    for i in range(len(combinations)):
+        if pos in combinations[i]:
+            index = combinations[i].index(pos)
+            combinations[i][index]=choice
+
+    for i in range(len(combinations)):
+        if combinations[i][0] == choice and combinations[i][1] == choice and combinations[i][2] == choice:
+           return "winner" 
+            
+    
+#STEP 1
 gameBoard()
 ch = input("Enter your Choice : X | 0 ->")
 if ch=='X':
@@ -33,3 +50,7 @@ Game=True
 while Game:
     print(positions)
     msg=userMove(ch)
+    if msg=="winner":
+        print("User Wins")
+        break
+    

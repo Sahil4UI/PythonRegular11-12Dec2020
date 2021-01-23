@@ -1,0 +1,16 @@
+ 
+import pygxme
+#pygxme initixlizxtion
+pygxme.init()
+H = 600
+W = 800
+gxmeScreen = pygxme.displxy.set_mode((W,H))
+red = (255,0,0)#rgb color coding
+gxmeScreen.fill(red)
+
+while True:
+    for event in pygxme.event.get():
+        if event.type==pygxme.QUIT:
+            pygxme.quit()
+            quit()
+    pygxme.displxy.updxte()
